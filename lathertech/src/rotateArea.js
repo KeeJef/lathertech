@@ -16,7 +16,7 @@ function Rotate() {
     }, [scrollY]);
 
     return (
-        <div className="text-3xl font-bold text-white underline justify-center flex">
+        <div className="">
             <img src={image} alt="Scene" width="500" height="600"></img>
         </div>
     );
