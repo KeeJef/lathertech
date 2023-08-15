@@ -11,16 +11,19 @@ function App() {
           title="Litsea & Peppermint"
           description="Litsea & Peppermint soap combines the cleansing properties of Litsea with the exfoliating benefits of peppermint flakes. It provides a thorough clean, removes dead skin cells, and leaves skin refreshed. This soap uses natural ingredients, is suitable for all skin types, and is ideal for daily use."
           ingredients="ingredients: coconut oil, olive oil, peppermint leaves, litsea oil, iron oxide"
+          folderName="litsea"
         />
         <SoapBox
           title="Charcoal & Grapefruit"
           description="Charcoal & Orange soap combines activated charcoal's deep cleaning and exfoliating properties with the refreshing scent of orange. It effectively removes impurities and dead skin cells. This soap, made with natural ingredients, is suitable for all skin types and daily use."
           ingredients="ingredients: coconut oil, olive oil, activated charcoal, grapefruit oil"
+          folderName="charcoal"
         />
         <SoapBox
           title="Rosemary & Charcoal"
           description="Rosemary & Charcoal soap provides a deep cleanse by leveraging activated charcoal's ability to absorb toxins and impurities from the skin. The addition of rosemary, known for its antibacterial properties and rich antioxidants, helps improve skin complexion and promotes healing. This natural soap can be used daily and is suitable for all skin types."
           ingredients="ingredients: coconut oil, olive oil, activated charcoal, rosemary oil"
+          folderName="rosemary"
         />
       </div>
     </div>

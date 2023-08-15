@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-function Rotate() {
+function Rotate({folderName}) {
     const [image, setImage] = useState(1);
-    const imageCount = 12; // The total number of rotating images
+    const imageCount = 15; // The total number of rotating images
 
     useEffect(() => {
         const handleScroll = (e) => {
@@ -20,7 +20,7 @@ function Rotate() {
 
     return (
         <div className="">
-            <img src={`${process.env.PUBLIC_URL}/rotateimages/photo_${image}.jpg`} alt="Scene" width="500" height="600"></img>
+            <img src={`${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${image}.png`} alt="Scene" width="500" height="600"></img>
         </div>
     );
 }

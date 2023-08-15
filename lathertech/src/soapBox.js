@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Rotate from "./rotateArea";
 
-function SoapBox({title, description, ingredients, image}) {
+function SoapBox({title, description, ingredients, folderName}) {
   return (
     <div className="flex-row border-b-2 border-double border-white lg:flex">
       <div className="flex flex-col justify-between flex-grow border-b-2 border-double border-white font-mono p-4 w-full lg:w-1/3 lg:border-r-2 lg:border-b-0">
@@ -14,7 +14,9 @@ function SoapBox({title, description, ingredients, image}) {
         </div>
       </div>
       <div className="flex justify-center items-center p-2">
-        <Rotate />
+        <Rotate 
+        folderName={folderName}
+        />
       </div>
     </div>
   );
