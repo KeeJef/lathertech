@@ -5,6 +5,15 @@ function Rotate({folderName}) {
     const imageCount = 15; // The total number of rotating images
 
     useEffect(() => {
+        // Preload images
+        const preloadImages = () => {
+            for (let i = 1; i <= imageCount; i++) {
+                const img = new Image();
+                img.src = `${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${i}.webp`;
+            }
+        };
+        preloadImages();
+
         const handleScroll = (e) => {
             setImage((prevImage) => {
                 if (e.deltaY > 0) { // scrolling down
@@ -16,11 +25,11 @@ function Rotate({folderName}) {
         };
         window.addEventListener('wheel', handleScroll);
         return () => window.removeEventListener('wheel', handleScroll);
-    }, [imageCount]);
+    }, [imageCount, folderName]);
 
     return (
         <div className="">
-            <img src={`${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${image}.png`} alt="Scene" width="350" height="350"></img>
+            <img src={`${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${image}.webp`} alt="Scene" width="350" height="350"></img>
         </div>
     );
 }
