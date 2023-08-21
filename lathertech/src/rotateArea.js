@@ -20,7 +20,7 @@ function Rotate({folderName}) {
 
     return (
         <div className="">
-            <img src={`${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${image}.png`} alt="Scene" width="500" height="600"></img>
+            <img src={`${process.env.PUBLIC_URL}/rotateimages/${folderName}/photo_${image}.png`} alt="Scene" width="350" height="350"></img>
         </div>
     );
 }

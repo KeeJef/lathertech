@@ -13,7 +13,7 @@ function SoapBox({title, description, ingredients, folderName}) {
           {ingredients}
         </div>
       </div>
-      <div className="flex justify-center items-center p-2">
+      <div className="flex justify-center items-center p-2 h-[270px]">
         <Rotate 
         folderName={folderName}
         />
