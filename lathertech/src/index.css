@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'Bebas Neue Pro Bold Italic';
-  src: url('fonts/bebas-neue-pro-bold-italic.otf') format('opentype');
+  font-display: swap;
+  src: url('fonts/bebas-neue-pro-bold-italic-subsetted.woff2') format('woff2');
 }
 
 body {
